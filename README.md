@@ -7,6 +7,40 @@
 
 <p>For more details, please check <a href="https://www.hydrogenplatform.com/docs/hydro/v1/">Hydrogen Raindrop Api Docs</a>
 
+## Gradle
+Step 1. Add it in your root build.gradle at the end of repositories:
+
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+Step 2. Add the dependency
+
+	dependencies {
+	        implementation 'com.github.ealtaca:raindrop-sdk:v1.0'
+	}
+    
+## Maven
+
+Step 1. Add the JitPack repository to your build file
+
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+Step 2. Add the dependency
+
+	<dependency>
+	    <groupId>com.github.ealtaca</groupId>
+	    <artifactId>raindrop-sdk</artifactId>
+	    <version>v1.0</version>
+	</dependency>
+
+
 ## Getting Started
 
     IHydroAuthenticator hydroAuthenticator = new HydroAuthenticator("API_KEY", "API_USERNAME", "USE_TESTNET true/false");
