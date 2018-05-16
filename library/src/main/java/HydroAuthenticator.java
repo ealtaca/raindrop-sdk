@@ -1,5 +1,3 @@
-package com.raindrop.sdk;
-
 import android.util.Log;
 
 /**

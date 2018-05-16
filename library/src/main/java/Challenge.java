@@ -1,5 +1,3 @@
-package com.raindrop.sdk;
-
 import com.google.gson.annotations.SerializedName;
 
 import java.math.BigInteger;

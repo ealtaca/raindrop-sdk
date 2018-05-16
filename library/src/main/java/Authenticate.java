@@ -1,5 +1,3 @@
-package com.raindrop.sdk;
-
 /**
  * Created by ealtaca on 15.05.2018.
  */

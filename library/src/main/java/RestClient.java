@@ -1,7 +1,3 @@
-package com.raindrop.sdk;
-
-import android.os.Build;
-
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
