@@ -1,3 +1,5 @@
+package com.raindrop.sdk;
+
 /**
  * Created by ealtaca on 15.05.2018.
  */
@@ -30,7 +32,7 @@ public class ApiCredentials {
 
     @Override
     public String toString() {
-        return "ApiCredentials{" +
+        return "com.raindrop.sdk.ApiCredentials{" +
                 "username='" + username + '\'' +
                 ", key='" + key + '\'' +
                 '}';

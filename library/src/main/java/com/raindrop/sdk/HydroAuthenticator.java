@@ -1,3 +1,5 @@
+package com.raindrop.sdk;
+
 import android.util.Log;
 
 /**
@@ -6,7 +8,7 @@ import android.util.Log;
 
 public class HydroAuthenticator {
 
-    private static final String TAG = "HydroAuthenticator";
+    private static final String TAG = "com.raindrop.sdk.HydroAuthenticator";
 
     private static final String BASE_URL = "https://api.hydrogenplatform.com/hydro/v1/";
     private static final String BASE_TEST_URL = "https://sandbox.hydrogenplatform.com/hydro/v1";
@@ -21,10 +23,10 @@ public class HydroAuthenticator {
 
         if (useTestnet) {
             this.restClient = new RestClient(BASE_TEST_URL,apiKey,apiUsername);
-            Log.i(TAG, "HydroAuthenticator initialized for TestNet");
+            Log.i(TAG, "com.raindrop.sdk.HydroAuthenticator initialized for TestNet");
         } else {
             this.restClient = new RestClient(BASE_URL,apiKey,apiUsername);
-            Log.i(TAG, "HydroAuthenticator initialized for MainNet");
+            Log.i(TAG, "com.raindrop.sdk.HydroAuthenticator initialized for MainNet");
         }
 
     }

@@ -1,3 +1,5 @@
+package com.raindrop.sdk;
+
 import com.google.gson.annotations.SerializedName;
 
 import java.math.BigInteger;
@@ -40,7 +42,7 @@ public class Challenge extends BaseApiResponse {
 
     @Override
     public String toString() {
-        return "Challenge{" +
+        return "com.raindrop.sdk.Challenge{" +
                 "success='" + super.isSuccess() + '\'' +
                 "message='" + super.getMessage() + '\'' +
                 "amount=" + amount + '\'' +

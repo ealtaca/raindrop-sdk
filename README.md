@@ -43,12 +43,12 @@ Step 2. Add the dependency
 
 ## Getting Started
 
-    IHydroAuthenticator hydroAuthenticator = new HydroAuthenticator("API_KEY", "API_USERNAME", "USE_TESTNET true/false");
+    IHydroAuthenticator hydroAuthenticator = new com.raindrop.sdk.HydroAuthenticator("API_KEY", "API_USERNAME", "USE_TESTNET true/false");
    
 
 ### Step 1: Add address to whitelist ( be careful, for security purposes, this id will only be generated one time. )
 
-    Whitelist whitelist = hydroAuthenticator.whitelist("Hydro/Ethereum ADDRESS 0x12312..."); 
+    com.raindrop.sdk.Whitelist whitelist = hydroAuthenticator.whitelist("Hydro/Ethereum ADDRESS 0x12312...");
     
     whitelist.isSuccess(); //api call is success (200)
     whitelist.getMessage(); //error response content
@@ -58,7 +58,7 @@ Step 2. Add the dependency
     
 ### Step 2: Get Raindrop details
 
-    Challenge challenge = hydroAuthenticator.challenge("HYDRO_ADDRESS_ID");
+    com.raindrop.sdk.Challenge challenge = hydroAuthenticator.challenge("HYDRO_ADDRESS_ID");
     
     whitelist.isSuccess(); //api call is success (200)
     whitelist.getMessage(); //error response content
@@ -74,7 +74,7 @@ Step 2. Add the dependency
 
 ### Step 3: Check on exist valid Raindrop transaction
 
-    Authenticate authenticate = hydroAuthenticator.authenticate("HYDRO_ADDRESS_ID");
+    com.raindrop.sdk.Authenticate authenticate = hydroAuthenticator.authenticate("HYDRO_ADDRESS_ID");
     
     // check is authenticated
     authenticate.isAuthenticated();

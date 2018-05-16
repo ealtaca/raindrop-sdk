@@ -1,3 +1,5 @@
+package com.raindrop.sdk;
+
 /**
  * Created by ealtaca on 15.05.2018.
  */
@@ -32,7 +34,7 @@ public class BaseApiResponse {
 
     @Override
     public String toString() {
-        return "BaseApiResponse{" +
+        return "com.raindrop.sdk.BaseApiResponse{" +
                 "success=" + success +
                 ", message='" + message +
                 '}';

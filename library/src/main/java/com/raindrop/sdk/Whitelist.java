@@ -1,3 +1,5 @@
+package com.raindrop.sdk;
+
 import com.google.gson.annotations.SerializedName;
 
 /**
@@ -19,7 +21,7 @@ public class Whitelist extends BaseApiResponse {
 
     @Override
     public String toString() {
-        return "Whitelist{" +
+        return "com.raindrop.sdk.Whitelist{" +
                 "success='" + super.isSuccess() + '\'' +
                 "message='" + super.getMessage() + '\'' +
                 "hydroAddressId='" + hydroAddressId + '\'' +

@@ -1,3 +1,5 @@
+package com.raindrop.sdk;
+
 /**
  * Created by ealtaca on 15.05.2018.
  */
@@ -15,7 +17,7 @@ public class Authenticate extends BaseApiResponse{
 
     @Override
     public String toString() {
-        return "Authenticate{" +
+        return "com.raindrop.sdk.Authenticate{" +
                 "success='" + super.isSuccess() + '\'' +
                 "message='" + super.getMessage() + '\'' +
                 "authenticated=" + authenticated + '}';
