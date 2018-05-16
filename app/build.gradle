@@ -4,7 +4,7 @@ android {
     compileSdkVersion 27
     buildToolsVersion "27.0.1"
     defaultConfig {
-        applicationId "com.raindrop.sdk"
+        applicationId "com.raindrop.sdk.sample"
         minSdkVersion 15
         targetSdkVersion 27
         versionCode 1
