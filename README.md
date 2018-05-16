@@ -43,12 +43,12 @@ Step 2. Add the dependency
 
 ## Getting Started
 
-    IHydroAuthenticator hydroAuthenticator = new com.raindrop.sdk.HydroAuthenticator("API_KEY", "API_USERNAME", "USE_TESTNET true/false");
+    HydroAuthenticator hydroAuthenticator = new HydroAuthenticator("API_KEY", "API_USERNAME", "USE_TESTNET true/false");
    
 
 ### Step 1: Add address to whitelist ( be careful, for security purposes, this id will only be generated one time. )
 
-    com.raindrop.sdk.Whitelist whitelist = hydroAuthenticator.whitelist("Hydro/Ethereum ADDRESS 0x12312...");
+    Whitelist whitelist = hydroAuthenticator.whitelist("Hydro/Ethereum ADDRESS 0x12312...");
     
     whitelist.isSuccess(); //api call is success (200)
     whitelist.getMessage(); //error response content
@@ -58,10 +58,10 @@ Step 2. Add the dependency
     
 ### Step 2: Get Raindrop details
 
-    com.raindrop.sdk.Challenge challenge = hydroAuthenticator.challenge("HYDRO_ADDRESS_ID");
+    Challenge challenge = hydroAuthenticator.challenge("HYDRO_ADDRESS_ID");
     
-    whitelist.isSuccess(); //api call is success (200)
-    whitelist.getMessage(); //error response content
+    challenge.isSuccess(); //api call is success (200)
+    challenge.getMessage(); //error response content
     
     // Set quantity of Hydro tokens to send to the blockchain. Since our token has 18 decimal places, the number that you will need to send may seem large, but remember that the 18 rightmost digits are actually decimals. For example, 313823208533000000 is actually .313823208533000000 Hydro.
     challenge.getAmount();
@@ -74,7 +74,7 @@ Step 2. Add the dependency
 
 ### Step 3: Check on exist valid Raindrop transaction
 
-    com.raindrop.sdk.Authenticate authenticate = hydroAuthenticator.authenticate("HYDRO_ADDRESS_ID");
+    Authenticate authenticate = hydroAuthenticator.authenticate("HYDRO_ADDRESS_ID");
     
     // check is authenticated
     authenticate.isAuthenticated();
