@@ -19,7 +19,7 @@ Step 1. Add it in your root build.gradle at the end of repositories:
 Step 2. Add the dependency
 
 	dependencies {
-	        implementation 'com.github.ealtaca:raindrop-sdk:v1.0.2'
+	        implementation 'com.github.ealtaca:raindrop-sdk:v1.0.3'
 	}
     
 ## Maven
@@ -37,7 +37,7 @@ Step 2. Add the dependency
 	<dependency>
 	    <groupId>com.github.ealtaca</groupId>
 	    <artifactId>raindrop-sdk</artifactId>
-	    <version>v1.0.2</version>
+	    <version>v1.0.3</version>
 	</dependency>
 
 
