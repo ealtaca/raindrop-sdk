@@ -1,4 +1,8 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.github.dcendents.android-maven'
+
+
+group='com.github.ealtaca'
 
 android {
     compileSdkVersion 27
